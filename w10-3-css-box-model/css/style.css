@@ -1,0 +1,35 @@
+body {
+    background-color: darkcyan;
+}
+
+.title {
+    background-color: green;
+}
+
+.text-desc {
+    font-size: medium;
+    background-color: darkolivegreen;
+}
+
+.box {
+    background-color: antiquewhite;
+    width: 150px;
+    height: 100px;
+    margin: 100px;
+    padding: 10px;
+    border: 10px solid violet;
+}
+
+#special {
+    background-color: brown;
+    position: absolute;
+    left: 300px;
+    top: 50px;
+
+}
+
+.text-title {
+    font-size: x-large;
+    font-style: oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
