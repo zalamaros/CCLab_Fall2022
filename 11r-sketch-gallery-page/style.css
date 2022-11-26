@@ -1,0 +1,48 @@
+html,
+body {
+  color: darkblue;
+  margin: 100;
+  padding: 0;
+  background-color: lightblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h1 {
+  background-color: #CCE5FF;
+}
+
+.box {
+  margin: 100;
+  background-color: #CCE5FF;
+}
+
+#creative {
+  width: 300px;
+  color: black
+}
+
+#creative:hover {
+  font-style: italic;
+  color: blueviolet
+}
+
+#lab {
+  width: 400px;
+}
+
+#lab:hover {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#first {
+  width: 500px;
+}
+
+#first:hover {
+  font-weight: bold;
+}
+
+canvas {
+  display: block;
+}
