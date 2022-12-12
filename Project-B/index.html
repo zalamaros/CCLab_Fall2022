@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CCLab Project</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <!-- Uncomment the line below if you use audio. -->
+  <!-- <script src="libraries/p5.sound.min.js"></script> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Khand:wght@600&family=ZCOOL+QingKe+HuangYou&display=swap"
+    rel="stylesheet">
+
+</head>
+
+
+<body>
+  <!-- the following div will contain the p5 canvas. -->
+  <div id="canvasContainer">
+    <!-- p5 canvas -->
+  </div>
+
+  <div class="intro">
+    <!-- empty -->
+  </div>
+
+
+  <div class="img-box" id="cozy-treehouse">
+    <img src="assets/cozy-treehouse.jpg">
+  </div>
+  <div class="img-box" id="vector-desert">
+    <img src="assets/vector-desert.jpg">
+  </div>
+  <div class="img-box" id="unpaid-park">
+    <img src="assets/unpaid-park.jpg">
+  </div>
+  <div class="img-box" id="two-faced">
+    <img src="assets/two-faced.jpg">
+  </div>
+  <div class="img-box" id="always-reaching">
+    <img src="assets/always-reaching.jpg">
+  </div>
+  <div class="img-box" id="nature-caption">
+    <p>
+      earth </p>
+  </div>
+
+
+  <div class="img-box" id="blue-spice">
+    <img src="assets/blue-spice.jpg">
+  </div>
+  <div class="img-box" id="bokeh-bullet">
+    <img src="assets/bokeh-bullet.jpg">
+  </div>
+  <div class="img-box" id="breath-life">
+    <img src="assets/breath-life.jpg">
+  </div>
+  <div class="img-box" id="bright-minds">
+    <img src="assets/bright-minds.jpg">
+  </div>
+  <div class="img-box" id="dragon-dreams">
+    <img src="assets/dragon-dreams.jpg">
+  </div>
+  <div class="img-box" id="lazy-moon">
+    <img src="assets/lazy-moon.jpg">
+  </div>
+  <div class="img-box" id="skater-pop">
+    <img src="assets/skater-pop.jpg">
+  </div>
+  <div class="img-box" id="mantis-bxtch">
+    <img src="assets/mantis-bxtch.jpg">
+  </div>
+  <div class="img-box" id="once-happy">
+    <img src="assets/once-happy.jpg">
+  </div>
+  <div class="img-box" id="knowing-now">
+    <img src="assets/knowing-now.jpg">
+  </div>
+  <div class="img-box" id="never-stop">
+    <img src="assets/never-stop.jpg">
+  </div>
+  <div class="img-box" id="sunset-train">
+    <img src="assets/sunset-train.jpg">
+  </div>
+  <div class="img-box" id="forfun-caption">
+    <p> imagine </p>
+  </div>
+
+
+
+  <div class="img-box" id="high-chair">
+    <img src="assets/high-chair.jpg">
+  </div>
+  <div class="img-box" id="glass-cage">
+    <img src="assets/glass-cage.jpg">
+  </div>
+  <div class="img-box" id="red-converse">
+    <img src="assets/red-converse.jpg">
+  </div>
+  <div class="img-box" id="same-coin">
+    <img src="assets/same-coin.jpg">
+  </div>
+  <div class="img-box" id="limbo">
+    <img src="assets/limbo.jpg">
+  </div>
+  <div class="img-box" id="commentary-caption">
+    <p> plights </p>
+  </div>
+
+
+  <div class="art" id="owl" onclick="showPopup('owl')">
+    <img src="assets/BW-owldoom.jpg">
+    <img id="color-owl" src="assets/owl-doom.jpg">
+  </div>
+
+  <p class="titles">
+    The Vial
+  </p>
+
+  <div class="art" id="diner" onclick="showPopup('diner')">
+    <img src="assets/BW-zokaldiner.jpg">
+    <img id="color-diner" src="assets/zokal-diner.jpg">
+  </div>
+
+  <p class="titles">
+    Warmth
+  </p>
+  <div class="art" id="cov" onclick="showPopup('cov')">
+    <img src="assets/BW-covidfuture.jpg">
+    <img id="color-cov" src="assets/covid-future.jpg">
+  </div>
+  <p class="titles">
+    herd-19
+  </p>
+  <div class="art" id="sax" onclick="showPopup('sax')">
+    <img id="bw-sax" src="assets/BW-saxbreeze.jpg">
+    <img id="color-sax" src="assets/sax-breeze.jpg">
+  </div>
+  <p class="titles">
+    Breezy Coltrane
+  </p>
+  <div class="art" id="claire" onclick="showPopup('claire')">
+    <img src="assets/BW-clairehome.jpg">
+    <img id="color-claire" src="assets/claire-home.jpg">
+  </div>
+  <p id="claire-title">
+    Claire
+  </p>
+
+  <div class="art" id="fromref">
+    <img src="assets/kobe-love.jpg">
+    <img src="assets/busan-sketch.jpg">
+    <img src="assets/gambino-listen.jpg">
+  </div>
+
+  <!-- PopUp Div -->
+  <div onclick="closePopup()" class="pop-up" id="popup-owl">
+    <img src="assets/owl-doom.jpg">
+    <div id="popup-owl-text">"The Vial" • Febuary 2020 • 10h 43m</div>
+  </div>
+  <div onclick="closePopup()" class="pop-up" id="popup-diner">
+    <img src="assets/zokal-diner.jpg">
+    <div id="popup-diner-text">"Warmth" • January 2020 • 6h</div>
+  </div>
+  <div onclick="closePopup()" class="pop-up" id="popup-cov">
+    <img src="assets/covid-future.jpg">
+    <div id="popup-cov-text">"herd-19" • January 2021 • 12h 19m</div>
+  </div>
+  <div onclick="closePopup()" class="pop-up" id="popup-sax">
+    <img src="assets/sax-breeze.jpg">
+    <div id="popup-sax-text">"Breezy Coltrane" • October 2019 • 7h 8m</div>
+  </div>
+  <div onclick="closePopup()" class="pop-up" id="popup-claire">
+    <img src="assets/claire-home.jpg">
+    <div id="popup-claire-text">"Claire" • June 2019 • 1h 36m</div>
+  </div>
+
+  <div class="bottom-info">
+    <p>
+      <span class="hovertext" data-hover="zoekalamaros@gmail.com">
+        inquiries
+      </span>
+    </p>
+    <p>
+      <span class="hovertext">
+        <a href="https://www.instagram.com/z0kal/?hl=en"> social media</a>
+      </span>
+    </p>
+    <p>
+      <span class="hovertext" data-hover="iPad Pro 11 • Apple Pencil • Procreate">
+        materials
+      </span>
+    </p>
+  </div>
+
+  <!-- the script tag below should always be at the bottom, right before the closing body tag -->
+  <script src="sketch.js"></script>
+</body>
+
+</html>
